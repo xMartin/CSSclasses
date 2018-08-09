@@ -6,7 +6,7 @@ title:  "First Steps"
 It's time for you to create your first website! Open your text editor and create a new file. In your text editor (e.g. Sublime Text), click the `File` menu and then click `New File`.
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/new-file.png" alt="Image of Sublime Texts file menu - New file selected.">
+  <img src="assets/images/new-file.png" alt="Image of Sublime Texts file menu - New file selected.">
   <figcaption>
     <p>Click the "File" menu and then click "New File".</p>
   </figcaption>
@@ -15,7 +15,7 @@ It's time for you to create your first website! Open your text editor and create
 Now type "Hello World!" or any other sentence you always wanted to read in your favorite browser.
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/hello-world.png" alt="Image of Sublime Text with open file - Text: Hello World!.">
+  <img src="assets/images/hello-world.png" alt="Image of Sublime Text with open file - Text: Hello World!.">
   <figcaption>
     <p>Now type "Hello World!" or any other sentence.</p>
   </figcaption>
@@ -24,7 +24,7 @@ Now type "Hello World!" or any other sentence you always wanted to read in your 
 Now click `File -> Save as…` and navigate to a folder you know how to find on your computer. It could be a good idea for now to just create a folder on your desktop or in your home folder called "cssclasses" and save your file in it. As a filename choose "index.html" and click `save`.
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/save-as.png" alt="OS X Save as file dialog window.">
+  <img src="assets/images/save-as.png" alt="OS X Save as file dialog window.">
   <figcaption>
     <p>Now click File -> Save as…</p>
   </figcaption>

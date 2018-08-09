@@ -12,7 +12,7 @@ We’ve told you that you can specify width, height and borders, but there’s m
 Here you can see how these different properties compose a box:
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/box-model.png" alt="A visualization of the box model.">
+  <img src="assets/images/box-model.png" alt="A visualization of the box model.">
   <figcaption>
     <p>A visualization of the box model.</p>
   </figcaption>

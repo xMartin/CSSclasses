@@ -75,14 +75,14 @@ You can read more about how to use developer tools in your browser using the fol
 Here is an animated gif of what inspect element looks like in Google Chrome:
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/inspect-element.gif" alt="Animated gif of inspecting an element in Google Chrome">
+  <img src="assets/images/inspect-element.gif" alt="Animated gif of inspecting an element in Google Chrome">
   <figcaption>
     <p>The element inspector in Google Chrome Developer Tools</p>
   </figcaption>
 </figure>
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/inspect-element.png" alt="Image of the styles panel in Google Chrome Developer Tools">
+  <img src="assets/images/inspect-element.png" alt="Image of the styles panel in Google Chrome Developer Tools">
   <figcaption>
     <p>The styles panel shows you what styles are applied to an element and where to find them.</p>
     <p>It also indicates overwritten styles as <strike>striked out</strike></p>

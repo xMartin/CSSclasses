@@ -20,7 +20,7 @@ Type `1 + 1` and press enter.
 Next, type `alert("This computer does exactly what I tell it to do")`.
 
 <figure>
-  <img src="{{site.baseurl}}/assets/images/console.png" alt="Browser console">
+  <img src="assets/images/console.png" alt="Browser console">
   <figcaption>
     <p>The console looks like this</p>
   </figcaption>
