@@ -1,0 +1,8 @@
+---
+layout: post
+title: "CSS Transitions"
+---
+
+# More infos
+
+If you don't have enough, yet!

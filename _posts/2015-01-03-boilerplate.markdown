@@ -3,20 +3,12 @@ layout: post
 title: "Boilerplate"
 ---
 
-## Basic HTML & HTML boilerplate
-* [Elements and Tags](#elements-and-tags)
-* [Pageflow](#pageflow)
-* [HTML Boilerplate](#html-boilerplate)
-* [(Practical) Elements](#practical-elements)
-
 ### Elements and Tags
 Elements and Tags are the building blocks of HTML.
 
 Elements are what makes up a HTML document. You can put elements inside of other elements. An element can include three things: a tag, attributes, and content.
 
 A Tag is the thing that indicates an element’s purpose. For example, the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` represents a ‘list item’. You’ll notice they’re always surrounded by angle brackets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:
-
-{% include switch.html %}
 
 {% highlight HTML %}
 <p>This is a paragraph.</p>
@@ -28,18 +20,14 @@ Always double-check that you’ve closed all your elements; otherwise, a browser
 
 Lastly, having elements inside of each other (“nesting”) looks just like this:
 
-{% include switch.html %}
-
 {% highlight HTML %}
 <p>This is a sentence, with an <em>em</em> element ("emphasize") inside of it.</p>
 {% endhighlight %}
 
 or this:
 
-{% include switch.html %}
-
 {% highlight HTML %}
-<div id="main-container">
+<div class="main-container">
   <h1>The h1 tag indicates the primary header of the document.</h1>
   <p>Some text.</p>
 </div>
@@ -47,146 +35,71 @@ or this:
 
 In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.
 
-### Pageflow
-In most circumstances "normal flow" is the way that elements are laid out on a web page. Every element in HTML is inside a rectangular box. Shown on the picture below.
 
-<figure>
-  <img src="{{site.baseurl}}/assets/images/pageflow.png" alt="Screenshot of the CSSclasses GitHub page with elements highlighted with black borders.">
-  <figcaption>
-    <p>Every element on the page highlighted.</p>
-  </figcaption>
-</figure>
+## Add web page content
 
-In our example, each of these boxes are one of two different types: **inline boxes** or **block boxes**. So what exactly does this mean? Let’s start with block boxes.
+Let's start adding some HTML and content to out `index.html` page.
+First off our name and a short summary.
 
-**Block boxes** are stacked vertically one after the other in the order they’ve been written in the HTML file, and they usually occupy the whole width of the page. They normally start in the upper left corner and go down to the bottom.
+1. Open `index.html` in the editor.
+1. Copy & paste the following code:
 
-Here is a simple example. Don’t get confused by the additional CSS. It’s just there for the purpose of making the boxes visible.
 
-<p data-height="765" data-theme-id="dark" data-slug-hash="PjqpyM" data-default-tab="result" data-user="CSSclasses" data-embed-version="2" data-pen-title="CSSclasses Block Boxes" class="codepen">See the Pen <a href="https://codepen.io/team/CSSclasses/pen/PjqpyM/">CSSclasses Block Boxes</a> by CSSclasses (<a href="https://codepen.io/CSSclasses">@CSSclasses</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-**Inline Boxes** work a bit differently. These boxes will also start at the upper left corner, but will arrange themselves horizontally.
-
-Here’s an example of that as well.
-
-<p data-height="256" data-theme-id="dark" data-slug-hash="Pjqmvm" data-default-tab="result" data-user="CSSclasses" data-embed-version="2" data-pen-title="CSSclasses inline box" class="codepen">See the Pen <a href="https://codepen.io/team/CSSclasses/pen/Pjqmvm/">CSSclasses inline box</a> by CSSclasses (<a href="https://codepen.io/CSSclasses">@CSSclasses</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-So HTML elements are by default either **block boxes** or **inline boxes** (of course, there are exceptions to this rule, but we don’t have to worry about that for now). For example, `div` is a block element, and so are headings like `h1` or `h2`. `span` or `strong` on the other hand are **inline elements**. Here are lists for the different elements:
-
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block-level elements</a>
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente" target="_blank">Inline elements</a>
-
-For now just keep in mind, that every box has some sort of display value.
-
-### HTML Boilerplate
-There is some basic structure you don't need to spend too much time on that is always there. Let's handle this in a very quick walkthrough (code, line-by-line comments):
-
-{% include switch.html %}
-
-{% highlight HTML %}
+```html
 <!DOCTYPE html>
-<!--This is a doctype. Every HTML file should have one.
-Basically you only need this one nowadays, as this means HTML5 (what you're learning here)
-for modern browsers but old browsers still pick up that your file is some kind of HTML.-->
-<html>
-<!-- Here the HTML starts, so we put an opening <html> tag here. -->
+<html lang="en" dir="ltr">
   <head>
-<!-- Inside the <head> we can put some meta information… -->
-    <meta charset="UTF-8">
-    <title>Our Page Title</title>
-<!-- … like charset and title. -->
-  </head>
-<!-- And we close our <head> element and open the <body>, where the actual content goes. -->
-  <body>
-    <h1>Hello world!</h1>
-  </body>
-</html>
-<!-- And in the end we close the <body> and <html> tag. -->
-{% endhighlight %}
-
-And there we are, this is our first valid HTML file! Here it is again, so you can neatly copy&paste it:
-
-{% include switch.html %}
-
-{% highlight HTML %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Our Page Title</title>
+    <meta charset="utf-8">
+    <title></title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <!-- put all the content here! -->
+    <h1>My Name</h1>
+    <h2>Summary</h2>
+    <p>About me...</p>
   </body>
 </html>
-{% endhighlight %}
+```
 
-Are you looking for a place to put your CSS? Don't rush, we will come to that. At the moment, we are looking at HTML only. If you know what you are doing, you can skip over to the <a href="#start-with-inline-styles">CSS</a> part.
+1. Replace `My Name` with your name and also `About me...` with a sentence describing yourself
+1. Save the changes
+1. Switch back to your web browser and refresh the page
 
-### (Practical) Elements
+Your name and summary are now visible 🤘
 
-#### Headings (h1-h6)
+Let's now add a list of interests.
 
-There is a hierarchy of heading elements that you can use for headlines. They start with h1 and end with h6.
+1. Copy the following code and paste underneath the content we just added
 
-{% include switch.html %}
+```html
+<h2>Interests</h2>
+<li>Interest...</li>
+<li>Interest...</li>
+<li>Interest...</li>
+```
 
-{% highlight HTML %}
-<h1>heading 1</h1>
-<h2>heading 2</h2>
-<h3>heading 3</h3>
-<h4>heading 4</h4>
-<h5>heading 5</h5>
-<h6>heading 6</h6>
-{% endhighlight %}
+Our updated HTML should looks something like:
 
-#### Paragraph
-This is the perfect tag if you want to markup text. Even this text is wrapped in a p.
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>My Name</h1>
+    <h2>Summary</h2>
+    <p>About me...</p>
+    <h2>Interests</h2>
+    <li>Interest...</li>
+    <li>Interest...</li>
+    <li>Interest...</li>
+  </body>
+</html>
+```
 
-{% include switch.html %}
+1. Replace each `Interest...` text with an interest of your own
+1. Save the changes
+1. Switch back to your web browser and refresh the page
 
-{% highlight HTML %}
-<p>Some text</p>
-{% endhighlight %}
-
-#### Strong, em, break
-These are some inline Elements that you can nest inside a paragraph. Strong and emphasis give some meaning to pieces of text, while break forces a
-linebreak.
-
-{% include switch.html %}
-
-{% highlight HTML %}
-<strong>Strong</strong> and <em>emphasis</em>,
-<br>break
-{% endhighlight %}
-
-#### Images
-The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if for some reason the image does not load.
-
-{% include switch.html %}
-
-{% highlight HTML %}
-<img src="https://placehold.it/664x442" alt="placeholder image">
-{% endhighlight %}
-<img src="https://placehold.it/664x442" alt="placeholder image">
-
-#### Links
-Links take the user to another page. The tag is simply an a which stands for anchor. It comes with the href (hyper reference) attribute, that tells the browser where to go to. You can also add a title attribute that shows once the user hovers over it.
-
-{% include switch.html %}
-
-{% highlight HTML %}
-<a href="http://cssconf.eu" title="CSSconf EU">CSSconfEU</a>
-{% endhighlight %}
-
-#### Div
-The div element is an element that does not have any special meaning or special styling. It’s perfect for grouping other elements together and assigning them a class or an id.
-
-{% include switch.html %}
-
-{% highlight HTML %}
-<div>I do nothing special</div>
-{% endhighlight %}
+Your interests are now visible 🤘

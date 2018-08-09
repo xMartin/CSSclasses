@@ -4,23 +4,13 @@ title: "CSS Hover"
 ---
 
 ### Hover
-Hover is a small example of how you can add some fun little interactivity to your site. Take our `div` example from above and let’s add a little bit to our CSS:
-
-{% include switch.html %}
+Hover is a small example of how you can add some fun little interactivity to your site. Take our `p` let’s add a little bit to our CSS:
 
 {% highlight CSS %}
-div {
-  color: white;
-  background-color: green;
-  width: 300px;
-  height: 200px;
-  font-family: sans-serif;
-  border: 5px solid black;
-}
-div:hover {
+p:hover {
   background-color: red;
   border: 5px dotted black;
 }
 {% endhighlight %}
 
-If you apply this CSS to our [border](#border) example, you will see no change at first. But if you move your mouse cursor over the `div` (you "`hover`" it), you will see the style changes applied, that we defined with the `div:hover` pseudo-class. There are some more pseudo-classes like that that you can learn about later.
+If you move your mouse cursor over the `p` (you "hover" it), you will see the style changes applied, that we defined with the `p:hover`.

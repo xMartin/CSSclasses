@@ -3,13 +3,7 @@ layout: post
 title:  "First Steps"
 ---
 
-## The Basics
-* [How to create a file called index.html](#how-to-create-a-file-called-indexhtml)
-* [How to open it in the browser](#how-to-open-indexhtml-in-your-browser)
-* [Edit, Save and Refresh workflow](#edit-save-and-refresh-workflow)
-
-### How to create a file called index.html
-Now it's time for you to create your first website! Open your text editor and create a new file. In your text editor (e.g. Sublime Text), click the `File` menu and then click `New File`.
+It's time for you to create your first website! Open your text editor and create a new file. In your text editor (e.g. Sublime Text), click the `File` menu and then click `New File`.
 
 <figure>
   <img src="{{site.baseurl}}/assets/images/new-file.png" alt="Image of Sublime Texts file menu - New file selected.">
